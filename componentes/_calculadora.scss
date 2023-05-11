@@ -1,0 +1,80 @@
+#base {
+  width: 60rem;
+  height: 80rem;
+  background-color: #e6e9e8;
+  border: 5px solid #565756;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4rem;
+  #capaPreta {
+    position: relative;
+    height: 30%;
+    background-color: #2b2d2c;
+    border-radius: 3rem;
+    border: 3px solid #eff1ee;
+    #logo {
+      position: absolute;
+      left: 5rem;
+      top: 1rem;
+      img {
+        width: 3rem;
+      }
+      p {
+        color: #eff1ee;
+        font-size: 1.7rem;
+      }
+    }
+
+    #visor {
+      background-color: #7d8a93;
+      height: 8rem;
+      width: 80%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 5px solid #eff1ee;
+      border-radius: 5px;
+      box-shadow: inset 0px 5px 5px -3px rgba(0, 0, 0, 0.75);
+
+      p {
+        font-size: 7rem;
+        position: absolute;
+        left: 99%;
+        transform: translate(-100%);
+      }
+    }
+  }
+  #capaCinza {
+    position: relative;
+    top: 3rem;
+    background-color: #d3d6d2;
+    height: 52.5rem;
+    border-radius: 4rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    .teclas {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      display: grid;
+      grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+      gap: 1.5rem;
+      button {
+        font-size: 5rem;
+      }
+      #imcbutton {
+        padding: 1rem;
+        grid-column: 2/6;
+      }
+      #mais {
+        grid-column: 4/5;
+        grid-row: 4/6;
+      }
+    }
+  }
+}
