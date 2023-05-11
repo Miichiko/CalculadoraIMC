@@ -72,6 +72,51 @@ html {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+#base #capaCinza .formulario form {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#base #capaCinza .formulario form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#base #capaCinza .formulario form div:first-child {
+  margin-top: 2rem;
+}
+#base #capaCinza .formulario form div label {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+#base #capaCinza .formulario form div input {
+  width: 90%;
+  line-height: 4rem;
+  font-size: 3rem;
+}
+#base #capaCinza .formulario form figure {
+  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  width: 90%;
+  gap: 0.3rem;
+}
+#base #capaCinza .formulario form .apagar {
+  justify-self: flex-end;
+}
+#base #capaCinza .formulario form .voltar {
+  grid-column: 1/3;
+  width: 100%;
+}
+#base #capaCinza .formulario form button {
+  width: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 #base #capaCinza .teclas {
   position: absolute;
   left: 50%;
